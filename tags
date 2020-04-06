@@ -660,6 +660,7 @@ left	js/lib/jquery.js	/^			parentOffset = { top: 0, left: 0 };$/;"	p	class:Anony
 listener	js/lib/eventemitter2.js	/^    function listener() {$/;"	f	function:EventEmitter.many
 listeners	js/lib/eventemitter2.js	/^  EventEmitter.prototype.listeners = function(type) {$/;"	m	class:EventEmitter
 listenersAny	js/lib/eventemitter2.js	/^  EventEmitter.prototype.listenersAny = function() {$/;"	m	class:EventEmitter
+logado	js/login/LoginUsuario.js	/^let logado = false;$/;"	v
 login	js/login/LoginUsuario_render.js	/^    function login(props){$/;"	f	function:LoginUsuario_render
 logout	js/login/LoginUsuario_render.js	/^    function logout(props){$/;"	f	function:LoginUsuario_render
 manipulationTarget	js/lib/jquery.js	/^function manipulationTarget( elem, content ) {$/;"	f

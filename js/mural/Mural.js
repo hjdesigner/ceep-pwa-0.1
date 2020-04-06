@@ -6,15 +6,19 @@ const Mural = (function(_render, Filtro){
     Filtro.on("filtrado", render)
 
     function adiciona(cartao){
-        cartoes.push(cartao)
+			if (logado) {
+				cartoes.push(cartao)
         cartao.on("mudanca.**", render)
         cartao.on("remocao", ()=>{
-            cartoes = cartoes.slice(0)
-            cartoes.splice(cartoes.indexOf(cartao),1)
-            render()
+        	cartoes = cartoes.slice(0)
+          cartoes.splice(cartoes.indexOf(cartao),1)
+          render()
         })
         render()
         return true
+			} else {
+				alert("Você não esta logado");
+			}
     }
 
     return Object.seal({
